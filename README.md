@@ -1,8 +1,8 @@
-#LiftSystem
+# LiftSystem
 LiftSystem provides user with an interface simulating a lift control service. Repository also contains tests for 
 LiftSystem and Lift classes.
 
-#Algorithm
+### Algorithm
 The system is designed to maintain current direction as long as it can. At first the lift has no direction.
 Then the first request sets current direction. When lift completes all requests on its way, then it can either change
 direction to opposite if there are any requests or stop and wait for new requests. Terminal advantages of this algorithm
@@ -10,7 +10,7 @@ over the FCFS approach is that the lift won't circle between levels possibly ign
 and also there is lower maximal waiting time, because no matter how many requests there are before, the next 
 request will be served in at most `2*numberOfLevels` steps.
 
-#LiftSystem class methods
+### LiftSystem class methods
 * `boolean addLift(int liftId, int currentLevel, int levelsAmount)` - adds lift with specified parameters. Impossible 
   arguments may cause unspecified results. Returns 
   false if `liftId` is taken, true otherwise.
@@ -33,7 +33,7 @@ which holds 3 methods:
     
 * `void step()` - performs a step of the simulation.
 
-#Interactive interface
+### Interactive interface
 Repository contains a Terminal class, which purpose is to simulate interaction between a user and the system. These are
 the commands that can be used in this mode (they work in the same way, as their equivalents in the LiftSystem class,
 unless specified otherwise):
@@ -51,6 +51,6 @@ information if the doors are opened.
 
 
 
-#Technical details
+### Technical details
 The system is written in Java with Maven, so the tests can be run with `mvn test` command. In order to run the
 interactive interface use `mvn compile` and then `mvn exec:java -q`.
