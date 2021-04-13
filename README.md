@@ -5,7 +5,7 @@ LiftSystem and Lift classes.
 ### Algorithm
 The system is designed to maintain current direction as long as it can. At first the lift has no direction.
 Then the first request sets current direction. When lift completes all requests on its way, then it can either change
-direction to opposite if there are any requests or stop and wait for new requests. Terminal advantages of this algorithm
+direction to opposite if there are any requests or stop and wait for new requests. Main advantages of this algorithm
 over the FCFS approach is that the lift won't circle between levels possibly ignoring requests on its way 
 and also there is lower maximal waiting time, because no matter how many requests there are before, the next 
 request will be served in at most `2*numberOfLevels` steps.
