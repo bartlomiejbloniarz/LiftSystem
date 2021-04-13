@@ -124,6 +124,13 @@ public class Lift {
         boolean isOpen() {
             return open;
         }
+
+        @Override
+        public String toString() {
+            return "currentLevel: " + currentLevel +
+                    ", currentDirection: " + currentDirection +
+                    ", open: " + open;
+        }
     }
 
 }
