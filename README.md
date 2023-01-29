@@ -1,4 +1,4 @@
-# LiftSystem
+# LiftSystem 2
 LiftSystem provides user with an interface simulating a lift control service. Repository also contains tests for 
 LiftSystem and Lift classes.
 
